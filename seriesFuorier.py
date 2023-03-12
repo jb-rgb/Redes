@@ -11,12 +11,18 @@ def serieFuorierTriangular(x, iteraciones):
         suma += ((sin((2*i-1)*x)) * (((-1)**i) / ((2*i-1)**2)))
     return suma
 
+# Se define una función llamada "serieFuorierCuadrada" que toma como argumentos un arreglo "x" 
+# y un entero "iteraciones", la función calcula y devuelve la serie de Fourier de la señal
+# cuadrada.
 def serieFuorierCuadrada(x, iteraciones):
     suma = 0
     for i in range(iteraciones):
         suma += ((sin((2*i+1)*x)) / (2*i+1))
     return suma
 
+# Se define una función llamada "serieFuorierDientesSierra" que toma como argumentos un arreglo "x" 
+# y un entero "iteraciones", la función calcula y devuelve la serie de Fourier de la señal
+# dientes de sierra.
 def serieFuorierDientesSierra(x, iteraciones):
     suma = 0
     for i in range(iteraciones):
